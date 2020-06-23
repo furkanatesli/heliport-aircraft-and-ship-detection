@@ -270,12 +270,12 @@ Hem **Uçak** hemde **Heliport** olan bir uydu görüntüsü testi.
 ![](media/8.jpg)
 
 **Gemi** olan bir uydu görüntüsü testi.
-
 ![](media/9.jpg)
 ![](media/10.jpg)
 
 #### 10b. Videodan Hedef Tespiti
 
+**Heliport** olan bir drone videosu testi.
 [![Youtube Video Bağlantısı!](media/11.jpg)](https://youtu.be/QcU-lHf22pE)
 
 
