@@ -1,4 +1,4 @@
-# harita-kiymetlendirme
+# Heliport Aircraft and Ship Detection Using Faster R-CNN
 Firat University - YMH414 Graduation Project, Spring 2019-2020 Project - Heliport Aircraft and Ship Detection Using Faster R-CNN
 
 ## Aşamalar
