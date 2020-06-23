@@ -30,7 +30,7 @@ https://github.com/tensorflow/models adresinden Tensorflow Object Detection API 
 
 https://github.com/furkanatesli/harita-kiymetlendirme adresindeki repo indirilir. İndirilen sıkıştırılmış dosyayı "C:\bitirme\models\research\object_detection" dizini içerisine çıkartıyoruz.
 
-### 3 - Anaconda Sanal Ortamının Oluşturulması
+### 3. Anaconda Sanal Ortamının Oluşturulması
 
 Ben sanal ortamda
 Python => 3.5
@@ -95,7 +95,7 @@ python setup.py build
 python setup.py install
 ```
 
-### 4 - Resim Bulma Ve Etiketleme
+### 4. Resim Bulma Ve Etiketleme
 
 Ben bu projede uydu görüntülerinden Heliport, Uçak ve Gemi görüntülerini bulup etiketledim sizde istediğiniz nesneye ait görüntüleri bulup işleme yapabilirsiniz.
 
@@ -105,7 +105,7 @@ https://github.com/tzutalin/labelImg adresinden labelleme uygulamasını indirip
 
 ![](media/1.png)
 
-### 5 - Eğitim ve Test Verilerinin Oluşturulması
+### 5. Eğitim ve Test Verilerinin Oluşturulması
 
 Ben 20|80 olarak test ve eğitim verilerimi ayırdım bu ayırdığımız verileri. "C:\bitirme\models\research\object_detection\images" dizini içerisindeki train ve test klasörlerine labelli halleri ile atıyoruz.
 
@@ -117,7 +117,7 @@ python xml_to_csv.py
 
 Bu kod "C:\bitirme\models\research\object_detection\images" dizininde train_labels.csv ve test_labels.csv iki adet dosya üretecektir.
 
-### 6 - Düzenleme İşlemleri
+### 6. Düzenleme İşlemleri
 
 #### 6a. generate_tfrecord.py Dosyasının Düzenlenmesi ve .record dosyalarının oluşturulması.
 
@@ -214,7 +214,7 @@ input_path: "C:/bitirme/models/research/object_detection/test.record"
 label_map_path: "C:/bitirme/models/research/object_detection/training/labelmap.pbtxt"
 ```
 
-### 7 - Eğitimi Başlatma
+### 7. Eğitimi Başlatma
 
 Tüm aşabalar doğu şekilde tamamlandıktan sonra eğitimi başlatıyoruz.
 
@@ -222,7 +222,7 @@ Tüm aşabalar doğu şekilde tamamlandıktan sonra eğitimi başlatıyoruz.
 python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
 ```
 
-### 8 - Tensorboard Kullanarak Eğitim Kayıtlarını Görüntüleme
+### 8. Tensorboard Kullanarak Eğitim Kayıtlarını Görüntüleme
 
 #### 8a. Tensorboard'ı Açma
 
@@ -249,7 +249,7 @@ Bu komut bize localde :6006 portunda çalışan bir web sayfası oluşturuyor. B
 
 Ve daha birçok grafiği Tensorboard ile görüntüleyebilirsiniz.
 
-### 9 - Inference Graf'ı Çıkarma.
+### 9. Inference Graf'ı Çıkarma.
 
 Eğitimden aldığımız sonuç grafını çıkarmamız gerekiyor. Bunun için aşağıdaki komutu XXXX olan yerlere son eğitimin seri numarasını yazıyoruz.
 
@@ -257,7 +257,7 @@ Eğitimden aldığımız sonuç grafını çıkarmamız gerekiyor. Bunun için a
 python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
 ```
 
-### 10 - Sonuçlar.
+### 10. Sonuçlar.
 
 #### 10a. Resimden Hedef Tespiti
 
